@@ -9,6 +9,10 @@ def wisest
 render ({:template => "director_templates/eldest.html.erb"})
 end
 
+def young
+  @youngest = Director.where.not({ :dob => nil }).order({ :dob => :desc }).at(0)
+render ({:template => "director_templates/youngest.html.erb"})
+end
 def director_details
   #params look like {"an_id" => "42"}
   the_id = params.fetch("an_id")
