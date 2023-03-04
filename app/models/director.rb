@@ -11,7 +11,5 @@
 #  updated_at :datetime         not null
 #
 class Director < ApplicationRecord
-  def index
-
-end
+ 
 end

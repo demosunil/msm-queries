@@ -13,6 +13,5 @@
 #  director_id :integer
 #
 class Movie < ApplicationRecord
-  def film
-end
+  
 end
