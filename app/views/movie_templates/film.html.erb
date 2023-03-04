@@ -48,8 +48,9 @@
     </td>
 
     <td>
-      <%= a_movie.director_id%>
-
+      <!--%= a_movie.director_id%--->
+      <% d = Director.where({ :id => a_movie.director_id}).at(0)%>
+      <%= d.name %>
         <!---Uh oh! We weren't able to find a director for this movie.--->
     </td>
 
